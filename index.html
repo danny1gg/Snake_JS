@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<title>Snake</title>
+	</head>
+	<body onkeydown = "changeSnakeDirection()">
+		<div class = "align_center">
+			<h1 id = "gameStatus" >Snake</h1>
+			<div id = "gameStatus">
+				<button id = "restartGame" class = "glow_btn" onclick = "location.reload()" style = "visibility: hidden;">Play again</button>
+				<h4 id = "score" style = "float: right;"></h4>
+			</div>
+			<br>
+		</div>
+		<div id = "gameTable">
+		</div>
+		<script type = "text/javascript" src="JS/script.js"></script>
+	</body>
+</html>

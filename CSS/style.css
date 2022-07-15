@@ -1,0 +1,98 @@
+body {
+	background: #C5E2E1;
+}
+
+#gameTable {
+	display: inline-block;
+	background: darkgreen;
+	position:  absolute;
+	margin-left:auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding: 0px;
+	width: 576px;
+	height: fit-content;
+	outline: 1px outset white;
+	box-shadow: 2px 2px 5px 2px grey;
+	border-radius: 20px;
+}
+
+#gameStatus {
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding: 0px;
+	width: 576px;
+	height: fit-content;
+	padding-right: 50px;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(32, auto);
+	width: 100%;
+	height: 18px;
+}
+
+.cell {
+	display: inline;
+	width: 100%;
+	height: 100%;
+	background: darkgreen;
+	/*border: 0.5px solid black;*/
+}
+
+.border {
+	display: inline;
+	width: 100%;
+	height: 100%;
+	background: grey;
+	/*border: 1px solid black;*/
+}
+
+.align_center {
+	text-align: center;
+}
+
+.animated_lost_message {
+	color: red;
+	animation-name:  you_lost;
+	animation-duration: 4s;
+}
+
+@keyframes you_lost {
+	0% {color: #C2F5FC;}
+	15% {color:  red;}
+	20% {color:  #C2F5FC;}
+	25% {color:  red;}
+	30% {color:  #C2F5FC;}
+	40% {color:  red;}
+	80% {color:  #C2F5FC;}
+	100% {color:  red;}
+}
+
+#gameTable:hover {
+	cursor: not-allowed;
+}
+
+.glow_btn {
+	position: relative;
+	background: #1D87AB;
+	box-shadow: 3px 3px 10px 1px #2594BA;
+	border-radius: 5px;
+	margin-top: 10px;
+	color: #FFF;
+	border: none;
+	height: 30px;
+}
+
+.glow_btn:hover {
+	background: #176A87;
+}
+
+.glow_btn:active {
+	background: #235BD6;
+}
