@@ -153,5 +153,5 @@ function stopGame() {
 	clearInterval(ANIMATE_GAME);
 	gameStatus.innerHTML = "Game over!";
 	gameStatus.setAttribute("class", "animated_lost_message");
-	restartGame.style.visibility = "visible";
+	restartBtn.style.visibility = "visible";
 }
