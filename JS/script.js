@@ -46,11 +46,11 @@ function createGameTable() { // creates the game table with the rounded corners
 	}
 }
 
-function setLocation(row, coll) { //sets the location of the food or the snake
+function setLocation(row, coll) { // sets the location of the food or the snake
 	return "cell_" + row + "_" + coll;
 }
 
-function setColorAndShape(object) { //sets the color and the shape of the food or snake
+function setColorAndShape(object) { // sets the color and the shape of the food or snake
 	if (object === food) {
 		food.style.backgroundColor  = "red";
 		food.style.borderRadius = "10px";
@@ -152,6 +152,6 @@ function checkIfSelfEated() {
 function stopGame() {
 	clearInterval(ANIMATE_GAME);
 	gameStatus.innerHTML = "Game over!";
-	restartGame.style.visibility = "visible";
 	gameStatus.setAttribute("class", "animated_lost_message");
+	restartGame.style.visibility = "visible";
 }
